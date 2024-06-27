@@ -22,8 +22,8 @@
             <!-- Nav links -->
             <div id="nav-links" class="hidden md:block">
                 <ul class="flex gap-4 font-medium">
-                    <li class="px-2 py-2"><a href="#"">Home</a></li>
-                    <li class="px-2 py-2"><a href="#">Services</a></li>
+                    <li class="px-2 py-2"><a href="#">Home</a></li>
+                    <li class=" px-2 py-2"><a href="#">Services</a></li>
                     <li class="px-2 py-2"><a href="#">Portfolio</a></li>
                     <li class="px-2 py-2"><a href="#">Pricing</a></li>
                     <li class="px-2 py-2"><a href="#">Team</a></li>
@@ -42,7 +42,23 @@
     </section>
 
     <!-- HAMBURGER NAVBAR -->
-    <section id="hamburger-navbar"></section>
+    <section id="hamburger-navbar" class="relative -translate-x-full transition-all duration-1000">
+        <div id="hamburger-close" class="absolute cursor-pointer text-white top-6 right-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <div class="border bg-blue-600 text-white">
+            <ul class="flex flex-col gap-4 font-medium justify-center items-center h-screen text-xl">
+                <li class="px-2 py-2"><a href="#">Home</a></li>
+                <li class="px-2 py-2"><a href="#">Services</a></li>
+                <li class="px-2 py-2"><a href="#">Portfolio</a></li>
+                <li class="px-2 py-2"><a href="#">Pricing</a></li>
+                <li class="px-2 py-2"><a href="#">Team</a></li>
+                <li class="px-2 py-2"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
 
     <!-- STORY -->
     <section id="story"></section>
@@ -80,6 +96,9 @@
     <!-- FOOTER -->
     <div id="footer"></div>
 
+
+    <!-- SCRIPT -->
+     <script src="dist/js/hamburger-menu.js"></script>
 </body>
 
 </html>
